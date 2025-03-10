@@ -1,0 +1,25 @@
+* {
+    padding: 5px;
+    margin: 5px;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+    #webname {
+        background-color: #bfdff2;
+    }
+    .mynav a {
+        text-decoration: none;
+        color: #327fa8;
+        margin-right: 25px;
+    }
+    
+    form * {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
