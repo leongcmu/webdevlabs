@@ -31,11 +31,11 @@ if (c.length > z) {
 } else {
     console.log("good job!")
 }
-/*
+
 var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"]
 var L2 = ["Apple", "Banana", "Kiwi", "Orange"]
 
-
+/*
 function findTheBanana(array, targetWord){
     for (let i = 0; i < array.length; i++){
         if (array[i] === targetWord){
@@ -46,7 +46,7 @@ function findTheBanana(array, targetWord){
 
 findTheBanana(L1,"Banana")
 findTheBanana(L2,"Banana")
-
+*/
 
 L1.forEach((element, index) => {
     if (element === "Banana") {
@@ -58,31 +58,28 @@ L2.forEach((element, index) => {
         alert("We found a banana in the second array at index " + index);
     }
 });
-*/
+
 
 
 function greetingFunc() {
-    var d = new Date();  // Create a new Date object to get the current time
-    var h = d.getHours();  // Get the current hour (0-23)
-    var E = document.getElementById("greeting");  // Select the HTML element with ID "greeting"
+    var d = new Date();  
+    var h = d.getHours();  
+    var E = document.getElementById("greeting");  
 
-    // Check the time and update the greeting accordingly
     if (h >= 5 && h < 12) {  
-        E.innerHTML = "Good morning, my name is Isabel.";  // Morning greeting (5 AM - 11:59 AM)
+        E.innerHTML = "Good morning, my name is Isabel.";  
     } else if (h >= 12 && h < 18) {  
-        E.innerHTML = "Good afternoon, my name is Isabel.";  // Afternoon greeting (12 PM - 5:59 PM)
+        E.innerHTML = "Good afternoon, my name is Isabel."; 
     } else if (h >= 18 && h < 20) {  
-        E.innerHTML = "Good evening, my name is Isabel.";  // Evening greeting (6 PM - 7:59 PM)
+        E.innerHTML = "Good evening, my name is Isabel."; 
     } else {  
-        E.innerHTML = "Good night, my name is Isabel.";  // Night greeting (8 PM - 4:59 AM)
+        E.innerHTML = "Good night, my name is Isabel."; 
     } 
 }
 
-// Get the current page URL
 var L = window.location.href;
-console.log(L);  // Log the full URL to the console for debugging
+console.log(L);  
 
-// Check if the current page is "index.html" before running the greeting function
 if (L.includes("index.html")) {  
    greetingFunc();  // Call the function to update the greeting
 }
