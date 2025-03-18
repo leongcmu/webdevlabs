@@ -46,7 +46,7 @@ function findTheBanana(array, targetWord){
 
 findTheBanana(L1,"Banana")
 findTheBanana(L2,"Banana")
-*/
+
 
 L1.forEach((element, index) => {
     if (element === "Banana") {
@@ -58,7 +58,7 @@ L2.forEach((element, index) => {
         alert("We found a banana in the second array at index " + index);
     }
 });
-
+*/
 
 
 function greetingFunc() {
@@ -82,4 +82,54 @@ console.log(L);
 
 if (L.includes("index.html")) {  
    greetingFunc();  // Call the function to update the greeting
+}
+
+function addYear() {
+    var d = new Date();  
+    var y = d.getFullYear(); 
+    var E = document.getElementById("copyYear");
+    E.innerHTML+=y;
+}
+
+function showList() {
+    //show the <ul> list
+    document.getElementById("favList").style.display = "block";
+    //hide the button
+    document.getElementById("showButton").style.display = "none"
+}
+
+
+$(document).ready(function() {
+    $("#longIntro").hide();
+    $("#readLess").hide();
+
+    $("#readMore").click(function() {
+        $("#longIntro").show();
+        $("#readLess").show();
+        $("#readMore").hide();
+    });
+
+    $("#readLess").click(function() {
+        $("#longIntro").hide();
+        $("#readLess").hide();
+        $("#readMore").show();
+    });
+});
+
+function validate() {
+    const name = document.getElementById("fname");
+    const email = document.getElementById("email");
+    const comment = document.getElementById("comment");
+    
+    if (!name.checkValidity()) {
+        document.getElementById("confirmation").textContent = name.validationMessage;
+    }
+    
+    if (!email.checkValidity()) {
+        document.getElementById("confirmation").textContent = email.validationMessage;
+    }
+    
+    if (!comment.checkValidity()) {
+        document.getElementById("confirmation").textContent = comment.validationMessage;
+    }
 }
