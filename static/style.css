@@ -40,9 +40,11 @@
         }
     }
 
+    /*
     #favList {
         display: none;
     }
+    */
     
     #showButton {
         background-color: #327fa8;  
@@ -56,3 +58,46 @@
     #showButton:hover {
         background-color: #327fa8;
     }
+
+    .funIMG {
+        border-radius: 100%;
+        width:50%
+    }
+
+    .container {
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 50px auto;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .flex-mainLayout {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      
+      .flex-mainLayout > div {
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }

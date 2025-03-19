@@ -25,17 +25,34 @@
         </nav>
     </header>
     
-    <div>
-        <h2>Things I Like To Do For Fun</h2>
+    <div class="mainLayout">
+        <!--<button id="showButton" onclick="showList()">Click to show more</button>
+        -->
+        <div id="item1">
+            <h2>Things I Like To Do For Fun</h2>
+            <ul id="favList">
+                <li>Tennis</li>
+                <li>Reading</li>
+                <li>Spending Time With Friends</li>
+                <li>Hiking</li>
+            </ul>  
+        </div>
 
-        <button id="showButton" onclick="showList()">Click to show more</button>
+        <div id="item2">
+            <img class="funIMG" src="/static/mountainpicture.jpg" alt="Image of a mountain">
+        </div>
 
-        <ul id="favList">
-            <li>Tennis</li>
-            <li>Reading</li>
-            <li>Spending Time With Friends</li>
-            <li>Hiking</li>
-        </ul>  
+        <div id="item3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qM43gnigKgQ?si=-fO4rhGvMP8joDKj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div id="item4">
+            <div class ="container"> 
+                <h2> Need some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
 
     <div>
